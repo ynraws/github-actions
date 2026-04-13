@@ -2,12 +2,20 @@ name: Firrst_flow
 
 on: workflow_dispatch
 jobs:
-  hello:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Step
-        run: 
-          echo "THis is first line"
-          echo "THis is second line"
-          echo "THis is third line"
-          echo "THis is fourth line"
+      - name: build step
+        run: echo "A demo build"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test phase
+      run: echo "running"
+
+deploy:
+  runs-on: ubuntu-latest
+  steps:
+    - name: deploy the app
+      run: echo "deploying the app"
+        
