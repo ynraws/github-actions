@@ -1,6 +1,11 @@
 name: Firrst_flow
 
-on: push
+on:
+  push:
+    branches: 
+      - main:
+      - develop:
+      - 'relese/**':
 jobs:
   build:
     runs-on: ubuntu-latest
