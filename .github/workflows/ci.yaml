@@ -6,4 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Step
-        run: echo "Hello Aadhya"
+        run: 
+          echo "THis is first line"
+          echo "THis is second line"
+          echo "THis is third line"
+          echo "THis is fourth line"
