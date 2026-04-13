@@ -1,0 +1,15 @@
+name:
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/**
+
+jobs:
+  quality-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: perform code quality
+        run: echo "Performing doce quality on the code "
+        
