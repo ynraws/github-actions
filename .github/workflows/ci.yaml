@@ -3,13 +3,12 @@ name: Firrst_flow
 on:
   push:
     branches: 
-      - main:
-      - develop:
-      - feature/*:
-
+      - main
+      - develop
+      - feature/*
   pull_request:
     branches:
-      - main:    
+      - main 
 jobs:
   build:
     runs-on: ubuntu-latest
