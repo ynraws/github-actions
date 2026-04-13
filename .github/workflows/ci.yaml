@@ -5,7 +5,11 @@ on:
     branches: 
       - main:
       - develop:
-      - 'relese/**':
+      - feature/*:
+
+  pull_request:
+    branches:
+      - main:    
 jobs:
   build:
     runs-on: ubuntu-latest
